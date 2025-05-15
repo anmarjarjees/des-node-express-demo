@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive meta tag for mobile scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Search engine description -->
+    <meta name="description"
+        content="A modern API demonstration webpage using HTML5, CSS, and JavaScript to communicate with the server side also using node and express">
+
+    <!-- Modern HTML page title -->
+    <title>API Demo – Learn & Explore</title>
+
+    <!-- External CSS file located in public/css/styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header banner and navigation -->
+        <header>
+            <!-- 'alt' provides text for screen readers; 'title' shows tooltip -->
+            <img src="assets/images/su_banner.gif" alt="Umbrella Banner" title="Umbrella Banner">
+
+            <!-- Main navigation, use aria-label to describe its role for screen readers -->
+            <nav id="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="api-demo.html">API Demo</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main content area -->
+        <main class="content" role="main" aria-labelledby="api-heading">
+            <!-- ARIA allows you to label sections for accessibility -->
+            <h1 id="api-heading">API Simple Demonstration</h1>
+
+            <form method="post" aria-label="API Input Form">
+                <fieldset>
+                    <legend>Choose an Action</legend>
+                    <div class="submit">
+                        <!-- Basic button using Fetch API -->
+                        <input type="button" id="getFetch" value="Get with Fetch()"
+                            aria-label="Fetch data using Fetch API">
+
+                        <!-- Preferred method: Async/Await -->
+                        <input type="button" id="getAsync" value="Get with Async/Await"
+                            aria-label="Fetch data using Async Await">
+                    </div>
+                </fieldset>
+            </form>
+
+            <!-- Area to display the result from the JSON file -->
+            <section id="data" aria-live="polite">
+                <!-- aria-live="polite" 
+                  > tells screen readers to announce updates without interrupting the user
+                  > means screen readers will read changes when idle
+                  Link: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-live
+                -->
+            </section>
+        </main>
+
+        <!-- Footer with accessible information -->
+        <footer>
+            <p>&copy; 2025 ILAC College & EFREI Paris University – Node & Express Web Site with API Demonstration – All
+                rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

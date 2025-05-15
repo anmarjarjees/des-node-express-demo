@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive meta tag for mobile scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Search engine description -->
+    <meta name="description"
+        content="Welcome to The Striped Umbrella Spa — your ideal vacation destination for relaxation and luxury.">
+
+    <!-- Modern HTML page title -->
+    <title>SU Home Page – Welcome to the Spa</title>
+
+    <!-- External CSS file located in public/css/styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header banner and navigation -->
+        <header>
+            <!-- 'alt' provides text for screen readers; 'title' shows tooltip -->
+            <img src="assets/images/su_banner.gif" alt="Umbrella Banner" title="Umbrella Banner">
+
+            <!-- Main navigation, use aria-label to describe its role for screen readers -->
+            <nav id="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="api-demo.html">API Demo</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main content area -->
+        <main class="content" role="main" aria-labelledby="home-heading">
+            <!-- ARIA allows you to label sections for accessibility -->
+            <h1 id="home-heading">Welcome to Our Amazing Spa</h1>
+
+            <!-- Informative description about the spa -->
+            <p>
+                Welcome to <strong>The Striped Umbrella</strong> — a full-service resort and spa just steps from the
+                Gulf of Mexico and ten miles east of Crab Key, Florida.
+                Enjoy the best of both worlds: a peaceful, sandy beach filled with exotic birds, and a short drive to
+                world-class shopping, dining, and entertainment.
+                Leave your laptop behind and bring a book — you won’t want to leave.
+            </p>
+
+            <!-- Resort image with appropriate alt and title -->
+            <img class="img-centre" src="assets/images/pool.jpg" alt="Spa Hotel Pool" title="Spa Pool" loading="lazy">
+
+            <!-- Embedded video demo with multiple formats and poster fallback -->
+            <video controls width="400" height="300" preload="auto" loop poster="assets/images/sea_spa_logo.jpg">
+                <source src="assets/media/w3schooldemo.mp4" type="video/mp4">
+                <source src="assets/media/w3schooldemo.webm" type="video/webm">
+                <source src="assets/media/w3schooldemo.ogg" type="video/ogg">
+                <!-- Fallback message for unsupported browsers -->
+                <p>Your browser does not support the video format. Please try using a modern browser.</p>
+            </video>
+        </main>
+
+        <!-- Footer with accessible information -->
+        <footer>
+            <p>&copy; 2025 ILAC College & EFREI Paris University – Node & Express Web Site with API Demonstration – All
+                rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

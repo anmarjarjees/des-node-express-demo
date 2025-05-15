@@ -1,0 +1,591 @@
+/* 
+Global Reset for consistency across browsers
+============================================ 
+*/
+/* Universal Reset: Ensures margin, padding, and box-sizing are consistent across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Ensures padding and border are included in width/height calculation */
+}
+
+/* 
+Body Styling
+=============
+*/
+/* Setting a clean sans-serif font and line-height for readability */
+body {
+    font-family: 'Arial', sans-serif;
+    /* Font-family: Arial for a modern sans-serif look */
+    line-height: 1.6;
+    /* Improves line spacing for better readability */
+    background-color: #f4f4f4;
+    /* Light gray background for a subtle, soft appearance */
+    color: #333;
+    /* Dark gray text color for good contrast and readability */
+}
+
+/* 
+Container Styles: Centralized Content Area
+==========================================
+*/
+/* This class controls the max-width and padding of the page content */
+.container {
+    width: 100%;
+    /* Full-width container */
+    max-width: 1200px;
+    /* Maximum width for larger screens */
+    margin: 0 auto;
+    /* Centers the container horizontally */
+    padding: 20px;
+    /* Adds padding around the container for spacing */
+}
+
+/* 
+Header Styles
+==============
+*/
+/* Header containing site logo and navigation */
+header {
+    text-align: center;
+    /* Centers the header content */
+    background-color: #333;
+    /* Dark background for the header */
+    color: #fff;
+    /* White text for header items */
+}
+
+header img {
+    width: 100%;
+    /* Ensures banner stretches to full width */
+    height: auto;
+    /* Maintains the aspect ratio of the banner image */
+}
+
+/* 
+Navigation Styling
+==================
+*/
+/* Styling for the main navigation bar */
+nav#main-nav {
+    background-color: #444;
+    /* Slightly lighter than header for distinction */
+}
+
+/* Navigation list styling */
+nav#main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    /* Removes default bullet points from the list */
+    display: flex;
+    /* Aligns the navigation items in a row */
+    justify-content: center;
+    /* Centers the items horizontally */
+    gap: 20px;
+    /* Adds space between the navigation items */
+}
+
+/* Style the navbar links */
+#main-nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 0;
+    /* Adjust the space between the links */
+}
+
+/* Styling for navigation links */
+nav#main-nav a {
+    color: #fff;
+    /* White text for navigation links */
+    text-decoration: none;
+    /* Removes underline from links */
+    padding: 0 10px;
+    /* Padding around links for easier clicking */
+    display: block;
+    /* Makes the link a block element for easier padding */
+}
+
+/* Hover effect for navigation links */
+nav#main-nav a:hover {
+    background-color: #555;
+    /* Darkens the background when hovered */
+    border-radius: 5px;
+    /* Smooth, rounded corners on hover */
+}
+
+/* 
+Content Section Styles
+=======================
+*/
+/* Main content area where the main page text and services appear */
+.content {
+    background-color: #fff;
+    /* White background for content */
+    padding: 20px;
+    /* Padding for spacing */
+    margin-top: 20px;
+    /* Adds space above the content */
+    border-radius: 8px;
+    /* Rounded corners for modern design */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+/* Main heading styling */
+h2 {
+    font-size: 2rem;
+    /* Larger font size for the main heading */
+    margin-bottom: 10px;
+    /* Space below the heading */
+    color: #333;
+    /* Dark gray for better contrast */
+}
+
+/* Subheading styling */
+h3 {
+    font-size: 1.5rem;
+    /* Slightly smaller than the main heading */
+    margin-top: 20px;
+    /* Adds space above the subheading */
+    color: #444;
+    /* Slightly lighter gray for subheadings */
+}
+
+/*
+Styling Links (for navigation and other links)
+==============================================
+*/
+/* Links default color */
+a {
+    color: #0066cc;
+    /* Blue color for links */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+/* Styling for links on hover */
+a:hover {
+    text-decoration: underline;
+    /* Adds underline on hover for better UX */
+}
+
+/* 
+List Styling (Ordered and Unordered Lists)
+============================================ */
+/* Styling for ordered lists */
+ol {
+    padding-left: 20px;
+    /* Adds padding on the left to indent list items */
+    margin-top: 15px;
+    /* Adds space above the list */
+}
+
+/* Each list item styling for ordered lists */
+ol li {
+    margin-bottom: 10px;
+    /* Adds space between items */
+}
+
+/* Styling for unordered lists */
+ul {
+    padding-left: 20px;
+    /* Adds padding for left alignment */
+    margin-top: 15px;
+    /* Adds margin above the list */
+}
+
+/* Each list item styling for unordered lists */
+ul li {
+    margin-bottom: 10px;
+    /* Space between list items */
+}
+
+/* 
+Table Styling
+=============
+*/
+/* Styling for tables */
+table {
+    width: 100%;
+    /* Ensures the table takes full width of the container */
+    border-collapse: collapse;
+    /* Removes spacing between table borders */
+    margin-top: 20px;
+    /* Adds space above the table */
+}
+
+/* Table cell padding and border styling */
+th,
+td {
+    padding: 15px;
+    /* Adds padding inside table cells */
+    border: 1px solid #ddd;
+    /* Light gray borders for table cells */
+    text-align: left;
+    /* Align text to the left within table cells */
+}
+
+/* Table header styling */
+th {
+    background-color: #f4f4f4;
+    /* Light background for the header row */
+    font-weight: bold;
+    /* Bold text for headers */
+}
+
+/* Table footer styling */
+tfoot td {
+    text-align: center;
+    /* Centers text in footer */
+    background-color: #f4f4f4;
+    /* Light gray background for footer */
+    font-weight: bold;
+    /* Bold text in the footer */
+}
+
+/*
+Contact Us Form Styles
+======================
+*/
+/* ============================================
+   Contact Us Page Form Styles
+   ============================================ */
+
+/* Form container */
+form {
+    background-color: #f9f9f9;
+    /* Light gray background for the form */
+    padding: 20px;
+    /* Padding inside the form */
+    border-radius: 8px;
+    /* Rounded corners for the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for the form */
+    max-width: 800px;
+    /* Form max width */
+    margin: 20px auto;
+    /* Centered form with spacing above and below */
+}
+
+/* Styling for fieldset (sectioning the form into groups) */
+fieldset {
+    border: 1px solid #ccc;
+    /* Light border for fieldset */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    /* Rounded corners for each section */
+}
+
+/* Styling for the legend (title of the fieldset) */
+legend {
+    font-size: 1.5rem;
+    /* Larger font for the legend */
+    font-weight: bold;
+    /* Bold text for the legend */
+    margin-bottom: 10px;
+    /* Space below the legend */
+}
+
+/* Input fields (text, email, etc.) */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    /* Make inputs take the full width */
+    padding: 10px;
+    /* Padding inside the inputs */
+    margin-bottom: 15px;
+    /* Space below each input */
+    border: 1px solid #ddd;
+    /* Light border for inputs */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 1rem;
+    /* Standard font size */
+    box-sizing: border-box;
+    /* Ensure padding doesn't overflow */
+}
+
+/* Styling for textareas */
+textarea {
+    resize: vertical;
+    /* Allows resizing vertically */
+}
+
+/* Focus effect for inputs and textareas */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #0066cc;
+    /* Blue border on focus */
+    outline: none;
+    /* Removes the default outline */
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+    /* Adds subtle glow on focus */
+}
+
+/* Styling for checkbox and radio button groups */
+.checkbox-group,
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows wrapping to the next line */
+    gap: 10px;
+    /* Space between items */
+}
+
+/* Checkbox and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+    /* Space between input and label */
+}
+
+/* Styling for submit button */
+input[type="submit"] {
+    background-color: #0066cc;
+    /* Blue background */
+    color: white;
+    /* White text */
+    padding: 12px 20px;
+    /* Padding inside the button */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners for the button */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    font-size: 1.1rem;
+    /* Larger font for the button */
+    transition: background-color 0.3s;
+    /* Smooth transition */
+}
+
+/* Hover effect for the submit button */
+input[type="submit"]:hover {
+    background-color: #005bb5;
+    /* Darker blue when hovered */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    /* Center text in footer */
+    padding: 10px;
+    background-color: #333;
+    /* Dark background for footer */
+    color: #fff;
+    /* White text */
+}
+
+/* Styling for the map container */
+.map-container {
+    margin-top: 30px;
+    /* Adds space above the map */
+    text-align: center;
+    /* Centers the map */
+}
+
+/* Styling for form labels */
+label {
+    font-size: 1rem;
+    /* Standard font size for labels */
+    margin-bottom: 5px;
+    /* Space below labels */
+    display: block;
+    /* Block display for labels */
+}
+
+/* Styling for the "sign me up" checkbox */
+#signme {
+    margin-left: 10px;
+    /* Add space between checkbox and label text */
+}
+
+/* 
+Styling for the form container (demo-api.html page)
+===================================================
+*/
+
+/* Main form element */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset styling */
+form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Legend styling */
+form legend {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Styling for the submit button container */
+.submit {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Button styling */
+.submit input[type="button"] {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover and active state for buttons */
+.submit input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+.submit input[type="button"]:active {
+    transform: scale(0.98);
+}
+
+/* Styling for the result display area */
+#data {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+Footer Styles
+============= 
+*/
+/* Footer containing copyright and project info */
+footer {
+    text-align: center;
+    /* Center-align the footer text */
+    padding: 15px 0;
+    /* Adds padding for spacing */
+    background-color: #333;
+    /* Dark footer background */
+    color: #fff;
+    /* White text in the footer */
+    margin-top: 30px;
+    /* Adds space between content and footer */
+}
+
+footer p {
+    font-size: 0.9rem;
+    /* Slightly smaller text in the footer */
+}
+
+/* 
+Media Queries for Responsive Design
+===================================
+*/
+/* Media Query for screens smaller than 768px (Mobile devices) */
+@media (max-width: 768px) {
+
+    /* Stacks the navigation links vertically on smaller screens */
+    nav#main-nav ul {
+        flex-direction: column;
+        /* Stack items vertically */
+        gap: 10px;
+        /* Adjust gap between items */
+    }
+
+    /* Reduces container padding for smaller screens */
+    .container {
+        padding: 10px;
+        /* Less padding on smaller screens */
+    }
+
+    /* Ensures the banner image is responsive */
+    header img {
+        width: 100%;
+        /* Stretches image to the full width */
+        height: auto;
+        /* Maintains aspect ratio */
+    }
+
+    /* Reduces padding inside content for smaller devices */
+    .content {
+        padding: 15px;
+        /* Less padding on mobile */
+    }
+
+    /* Reduces font sizes for headings */
+    h2 {
+        font-size: 1.8rem;
+        /* Slightly smaller font for smaller screens */
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        /* Smaller font size for subheadings */
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        /* Smaller font in footer for mobile */
+    }
+}
+
+/* 
+MDN Documentation Links for Reference
+=====================================
+*/
+/* Links to the MDN documentation for various properties and techniques used */
+
+/* General CSS Reference */
+@import url('https://developer.mozilla.org/en-US/docs/Web/CSS');
+/* General CSS reference */
+
+/* Flexbox Layout */
+@import url('https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes');
+/* Flexbox layout techniques */
+
+/* Media Queries */
+@import url('https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries');
+/* Responsive design and media queries */
+
+/* Box Model */
+@import url('https://developer.mozilla.org/en-US/docs/Web/CSS/box-model');
+/* Box model explanation */
+
+/* Border Radius */
+@import url('https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius');
+/* Border radius for rounded corners */
+
+/* CSS Box Shadow */
+@import url('https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow');
+/* Applying shadow effects */
+
+/* Table Styling */
+@import url('https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Table_Layout');
+/* Table layout and styling */
+
+/* Typography */
+@import url('https://developer.mozilla.org/en-US/docs/Web/CSS/font');
+/* Typography and font styling */

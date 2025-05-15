@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Piano",
+        "history": "Invented in 1700 by Bartolomeo Cristofori in Italy.",
+        "types": [
+            "Baby Grand",
+            "Parlor Grand",
+            "Concert Grand"
+        ],
+        "categories": [
+            "61 keys",
+            "76 keys",
+            "88 keys"
+        ],
+        "brands": [
+            "Steinway & Sons",
+            "Yamaha",
+            "Casio"
+        ]
+    },
+    {
+        "name": "Guitar",
+        "history": "Originated in Spain in the 15th century.",
+        "types": [
+            "Acoustic",
+            "Electric",
+            "Classical"
+        ],
+        "categories": [
+            "6 strings",
+            "12 strings",
+            "7 strings"
+        ],
+        "brands": [
+            "Fender",
+            "Gibson",
+            "Tyler"
+        ]
+    },
+    {
+        "name": "Ukulele",
+        "history": "Originated in Hawaii in the late 19th century.",
+        "types": [
+            "Soprano",
+            "Concert",
+            "Tenor"
+        ],
+        "categories": [
+            "4 strings",
+            "6 strings"
+        ],
+        "brands": [
+            "Kamaka",
+            "Lanikai",
+            "Kala"
+        ]
+    }
+]
