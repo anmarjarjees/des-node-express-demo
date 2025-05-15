@@ -12,12 +12,11 @@ It is ideal for beginners who want to learn how to:
 ---
 
 # Technologies Used:
-
-- [Node.js](https://nodejs.org/)
-- [Express.js](https://expressjs.com/)
-- [Nodemon](https://github.com/remy/nodemon) – for live reloading
-- [dotenv](https://www.npmjs.com/package/dotenv) – for managing environment variables
-- [morgan](https://www.npmjs.com/package/morgan) – for logging HTTP requests
+- [Node.js](https://nodejs.org/) => Node.js JS Environment
+- [Express.js](https://expressjs.com/) => Express.js Back-End JS/Node Framework
+- [Nodemon](https://github.com/remy/nodemon) => for live reloading
+- [dotenv](https://www.npmjs.com/package/dotenv) => for managing environment variables
+- [morgan](https://www.npmjs.com/package/morgan) => for logging HTTP requests
 - [EJS](https://ejs.co/) (optional, if you use it for templating)
 - [Body-parser](https://www.npmjs.com/package/body-parser) (optional, depending on setup)
 
@@ -94,20 +93,21 @@ This tells Node.js to run app.js automatically.
 Create a simple app.js file that loads Express, sets up routing, and starts the server. 
 Example:
 ```js
-const express = require('express');
-const app = express();
-const port = 3000;
-
-app.use(express.static('public'));
+const express = require('express')
+const app = express()
+const port = 3000
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
-});
+  res.send('Hello World!')
+})
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
-});
+  console.log(`Example app listening on port ${port}`)
+})
 ```
+Link: https://expressjs.com/en/starter/hello-world.html
+
+---
 
 # Using `nodemon` for Auto-Reload (Optional But Recommended!)
 nodemon is a development tool that automatically restarts the server whenever a file changes.
@@ -133,6 +133,17 @@ This will add it to devDependencies:
 ```
 
 3. Finally, we can run our app using either from the following ways:
-- npm start → for running normally
-- npm run dev → for development with auto-reload
+- npm start => for running normally
+- npm run dev => for development with auto-reload
+
+# References, Resources, and Credits:
+- Express.js Installation Guide
+- My GitHub Repositories:
+  - https://github.com/anmarjarjees/express-node-website
+  - https://github.com/anmarjarjees/express-basics
+  - https://github.com/anmarjarjees/express-application
+  - https://github.com/anmarjarjees/express-website-hbs
+  - https://github.com/anmarjarjees/node.js-start
+  - https://github.com/anmarjarjees/ECMAScript6
+  - https://github.com/anmarjarjees/js-frameworks
 
